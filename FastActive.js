@@ -12,7 +12,7 @@
             },
             setActive = function(e) {
                 clearActive();
-                if (targetTagNames.indexOf(e.target.tagName) > -1) {
+                if (targetTagNames.indexOf(e.target.className) > -1 || targetTagNames.indexOf(e.target.tagName) > -1) {
                     activeElement = e.target;
                     activeElement.classList.add(activeClass);
                 }
